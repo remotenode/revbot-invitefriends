@@ -113,21 +113,21 @@
     }
     
   function getLocalizedStoryText(language, userId) {
+    const baseUrl = `@Rate2Earn_Bot?start=${userId}`;
     const translationsText = {
-      en: `Join me - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      de: `Komm mit - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      es: `Únete a mí - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      fr: `Rejoins-moi - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      it: `Unisciti a me - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      ms: `Sertai saya - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      nl: `Doe mee - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      pl: `Dołącz do mnie - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      ru: `Присоединяйся - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      tr: `Bana katıl - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      uk: `Приєднуйся - https://t.me/Rate2Earn_Bot?start=${userId}`,
-      pt: `Junte-se a mim - https://t.me/Rate2Earn_Bot?start=${userId}`
+      en: `Join me - ${baseUrl}`,
+      de: `Komm mit - ${baseUrl}`,
+      es: `Únete a mí - ${baseUrl}`,
+      fr: `Rejoins-moi - ${baseUrl}`,
+      it: `Unisciti a me - ${baseUrl}`,
+      ms: `Sertai saya - ${baseUrl}`,
+      nl: `Doe mee - ${baseUrl}`,
+      pl: `Dołącz do mnie - ${baseUrl}`,
+      ru: `Присоединяйся - ${baseUrl}`,
+      tr: `Bana katıl - ${baseUrl}`,
+      uk: `Приєднуйся - ${baseUrl}`,
+      pt: `Junte-se a mim - ${baseUrl}`
     };
-
     return translationsText[language] || translationsText.en; // Возвращает перевод для указанного языка или английский по умолчанию
   }
     
