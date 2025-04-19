@@ -134,12 +134,11 @@
   }
     
     function shareToStory() {
-      alert(1);
       const storyImageUrl = 'https://drive.usercontent.google.com/download?id=18zX-RxlEtqzNIwZA2ocUGihMm_WR3hUy';
       const storyText = getLocalizedStoryText(getBrowserLanguage(), window.Telegram.WebApp.initDataUnsafe.user.id);
 
       tg.shareToStory({
-        url: storyImageUrl,
+        media: storyImageUrl,
         text: storyText,
       });
     }
