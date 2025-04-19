@@ -109,9 +109,7 @@
     
     // Function to get browser language
     function getBrowserLanguage() {
-      const lang = navigator.language || navigator.languages[0];
-      const primaryLang = lang.split('-')[0];
-      return translations[primaryLang] ? primaryLang : 'en';
+      return translations[window.Telegram.WebApp.initDataUnsafe.user.language_code] ? window.Telegram.WebApp.initDataUnsafe.user.language_code : 'en';
     }
     
   function getLocalizedStoryText(language, userId) {
