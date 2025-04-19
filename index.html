@@ -135,7 +135,7 @@
     
     function shareToStory() {
       const storyImageUrl = 'https://drive.usercontent.google.com/download?id=18zX-RxlEtqzNIwZA2ocUGihMm_WR3hUy';
-      const storyText = getLocalizedStoryText(getBrowserLanguage(), tg.initDataUnsafe.user.id);
+      const storyText = getLocalizedStoryText(getBrowserLanguage(), window.Telegram.WebApp.initDataUnsafe.user.id);
 
       tg.shareToStory({
         url: storyImageUrl,
